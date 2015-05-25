@@ -18,21 +18,15 @@
 namespace Elcodi\Component\Shipping;
 
 /**
- * Class ElcodiShippingRangeTypes
+ * Class ElcodiShippingEvents
  */
-class ElcodiShippingRangeTypes
+final class ElcodiShippingEvents
 {
     /**
-     * @var string
+     * This event is dispatched when all shipping possibilities are required
      *
-     * type price
+     * event.name : shipping.collect
+     * event.class : ShippingCollectionEvent
      */
-    const TYPE_PRICE = 1;
-
-    /**
-     * @var string
-     *
-     * type weight
-     */
-    const TYPE_WEIGHT = 2;
+    const SHIPPING_COLLECT = 'shipping.collect';
 }
